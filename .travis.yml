@@ -1,0 +1,9 @@
+language: cpp
+sudo: required
+dist: trusty
+compiler:
+- gcc
+- clang
+os:
+- linux
+script: make -f Makefile.repo && make && make check
