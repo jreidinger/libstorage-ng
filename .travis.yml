@@ -7,5 +7,5 @@ compiler:
 os:
 - linux
 before_install:
-  - sudo apt-get install -y libxml2-dev libboost-dev libboost-regex-dev libtool doxygen graphviz
+  - sudo apt-get install -y libxml2-dev libboost-dev libboost-regex-dev libtool doxygen graphviz libboost-test-dev
 script: make -f Makefile.repo && make && make check
