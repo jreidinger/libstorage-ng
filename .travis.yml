@@ -10,4 +10,4 @@ before_install:
   - sudo apt-get install -y libxml2-dev libboost-dev libboost-regex-dev libtool doxygen graphviz libboost-test-dev
 script: CXXFLAGS=-coverage make -f Makefile.repo && make && sudo make install && make check
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -g testsuite
